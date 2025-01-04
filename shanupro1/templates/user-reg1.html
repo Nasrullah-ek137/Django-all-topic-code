@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>user registration</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form}}
+
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if messages %}
+        {% for message in messages %}
+
+        {% if message.tags %}
+        {{message.tags}}
+        {% endif %}
+
+        {{message}}
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>

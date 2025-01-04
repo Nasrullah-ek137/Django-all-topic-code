@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+    <head>
+        <title>{% block titled %}{% endblock titled %}</title>
+        <link rel="stylesheet" href="{% static 'css/allmin.css' %}">
+        
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <nav>
+            <ul>
+            <li><a href="{% url 'homepg' %}">Home</a></li>
+            <li><a href="{% url 'aboutpg' %}">About</a></li>
+            <li><a href="{% url 'courseinfo' %}">Courses</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+
+        <i class="fa-brands fa-squarespace"></i>
+        
+        {% block content %}{% endblock content %}
+
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/allmin.js' %}"></script>
+
+    </body>
+</html>

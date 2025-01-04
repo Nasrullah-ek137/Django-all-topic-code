@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Database page</title>
+    </head>
+    <body>
+        <h1>Student data</h1>
+        {% if stu %}
+        <h1>show data</h1>
+
+        {% for st in stu %}
+        <h5>{{st.stuid}}</h5>
+        <h5>{{st.stuname}}</h5>
+        <h5>{{st.stuemail}}</h5>
+        <h5>{{st.stupass}}</h5>
+        {% endfor %}
+        
+        {% else %}
+        <h1>no data</h1>
+
+        {% endif %}
+
+    </body>
+</html>

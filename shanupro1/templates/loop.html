@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>shanu</title>
+    </head>
+    <body>
+        {% for i in names %}
+        <h1>{{forloop.counter}} {{i}}</h1>
+        <br>
+        <h2>{{forloop.counter0}} {{i}}</h2>
+        <br>
+        <h3>{{forloop.revcounter}} {{i}}</h3>
+        <br>
+        <h3>{{forloop.revcounter0}} {{i}}</h3>
+        <br>
+        <h3>{{forloop.first}} {{i}}</h3>
+        <br>
+        <h3>{{forloop.last}} {{i}}</h3>
+        {% endfor %}
+    </body>
+</html>

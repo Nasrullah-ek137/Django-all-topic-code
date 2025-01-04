@@ -1,0 +1,1 @@
+default_app_config='shanuapp1.apps.Shanuapp1Config'
